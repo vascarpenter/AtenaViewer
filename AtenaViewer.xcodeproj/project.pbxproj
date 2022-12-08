@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5825D5A52941A13D00E7D395 /* AtenaViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5A42941A13D00E7D395 /* AtenaViewerApp.swift */; };
+		5825D5A72941A13D00E7D395 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5A62941A13D00E7D395 /* ContentView.swift */; };
+		5825D5A92941A13F00E7D395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5825D5A82941A13F00E7D395 /* Assets.xcassets */; };
+		5825D5AC2941A13F00E7D395 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5825D5AB2941A13F00E7D395 /* Preview Assets.xcassets */; };
+		5825D5AE2941A13F00E7D395 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5AD2941A13F00E7D395 /* Persistence.swift */; };
+		5825D5B12941A13F00E7D395 /* AtenaViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5AF2941A13F00E7D395 /* AtenaViewer.xcdatamodeld */; };
+		5825D5BC2941A14000E7D395 /* AtenaViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5BB2941A14000E7D395 /* AtenaViewerTests.swift */; };
+		5825D5C62941A14000E7D395 /* AtenaViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5C52941A14000E7D395 /* AtenaViewerUITests.swift */; };
+		5825D5C82941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5C72941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5825D5B82941A14000E7D395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5825D5992941A13D00E7D395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5825D5A02941A13D00E7D395;
+			remoteInfo = AtenaViewer;
+		};
+		5825D5C22941A14000E7D395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5825D5992941A13D00E7D395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5825D5A02941A13D00E7D395;
+			remoteInfo = AtenaViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5825D5A12941A13D00E7D395 /* AtenaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtenaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5825D5A42941A13D00E7D395 /* AtenaViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerApp.swift; sourceTree = "<group>"; };
+		5825D5A62941A13D00E7D395 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5825D5A82941A13F00E7D395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5825D5AB2941A13F00E7D395 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5825D5AD2941A13F00E7D395 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5825D5B02941A13F00E7D395 /* AtenaViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AtenaViewer.xcdatamodel; sourceTree = "<group>"; };
+		5825D5B22941A13F00E7D395 /* AtenaViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AtenaViewer.entitlements; sourceTree = "<group>"; };
+		5825D5B72941A14000E7D395 /* AtenaViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtenaViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5825D5BB2941A14000E7D395 /* AtenaViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerTests.swift; sourceTree = "<group>"; };
+		5825D5C12941A14000E7D395 /* AtenaViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtenaViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5825D5C52941A14000E7D395 /* AtenaViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerUITests.swift; sourceTree = "<group>"; };
+		5825D5C72941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5825D59E2941A13D00E7D395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5B42941A14000E7D395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5BE2941A14000E7D395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5825D5982941A13D00E7D395 = {
+			isa = PBXGroup;
+			children = (
+				5825D5A32941A13D00E7D395 /* AtenaViewer */,
+				5825D5BA2941A14000E7D395 /* AtenaViewerTests */,
+				5825D5C42941A14000E7D395 /* AtenaViewerUITests */,
+				5825D5A22941A13D00E7D395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5825D5A22941A13D00E7D395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5825D5A12941A13D00E7D395 /* AtenaViewer.app */,
+				5825D5B72941A14000E7D395 /* AtenaViewerTests.xctest */,
+				5825D5C12941A14000E7D395 /* AtenaViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5825D5A32941A13D00E7D395 /* AtenaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				5825D5A42941A13D00E7D395 /* AtenaViewerApp.swift */,
+				5825D5A62941A13D00E7D395 /* ContentView.swift */,
+				5825D5A82941A13F00E7D395 /* Assets.xcassets */,
+				5825D5AD2941A13F00E7D395 /* Persistence.swift */,
+				5825D5B22941A13F00E7D395 /* AtenaViewer.entitlements */,
+				5825D5AF2941A13F00E7D395 /* AtenaViewer.xcdatamodeld */,
+				5825D5AA2941A13F00E7D395 /* Preview Content */,
+			);
+			path = AtenaViewer;
+			sourceTree = "<group>";
+		};
+		5825D5AA2941A13F00E7D395 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5825D5AB2941A13F00E7D395 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5825D5BA2941A14000E7D395 /* AtenaViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5825D5BB2941A14000E7D395 /* AtenaViewerTests.swift */,
+			);
+			path = AtenaViewerTests;
+			sourceTree = "<group>";
+		};
+		5825D5C42941A14000E7D395 /* AtenaViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5825D5C52941A14000E7D395 /* AtenaViewerUITests.swift */,
+				5825D5C72941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift */,
+			);
+			path = AtenaViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5825D5A02941A13D00E7D395 /* AtenaViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5825D5CB2941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewer" */;
+			buildPhases = (
+				5825D59D2941A13D00E7D395 /* Sources */,
+				5825D59E2941A13D00E7D395 /* Frameworks */,
+				5825D59F2941A13D00E7D395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtenaViewer;
+			productName = AtenaViewer;
+			productReference = 5825D5A12941A13D00E7D395 /* AtenaViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5825D5B62941A14000E7D395 /* AtenaViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5825D5CE2941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewerTests" */;
+			buildPhases = (
+				5825D5B32941A14000E7D395 /* Sources */,
+				5825D5B42941A14000E7D395 /* Frameworks */,
+				5825D5B52941A14000E7D395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5825D5B92941A14000E7D395 /* PBXTargetDependency */,
+			);
+			name = AtenaViewerTests;
+			productName = AtenaViewerTests;
+			productReference = 5825D5B72941A14000E7D395 /* AtenaViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5825D5C02941A14000E7D395 /* AtenaViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5825D5D12941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewerUITests" */;
+			buildPhases = (
+				5825D5BD2941A14000E7D395 /* Sources */,
+				5825D5BE2941A14000E7D395 /* Frameworks */,
+				5825D5BF2941A14000E7D395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5825D5C32941A14000E7D395 /* PBXTargetDependency */,
+			);
+			name = AtenaViewerUITests;
+			productName = AtenaViewerUITests;
+			productReference = 5825D5C12941A14000E7D395 /* AtenaViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5825D5992941A13D00E7D395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					5825D5A02941A13D00E7D395 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					5825D5B62941A14000E7D395 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 5825D5A02941A13D00E7D395;
+					};
+					5825D5C02941A14000E7D395 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 5825D5A02941A13D00E7D395;
+					};
+				};
+			};
+			buildConfigurationList = 5825D59C2941A13D00E7D395 /* Build configuration list for PBXProject "AtenaViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5825D5982941A13D00E7D395;
+			productRefGroup = 5825D5A22941A13D00E7D395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5825D5A02941A13D00E7D395 /* AtenaViewer */,
+				5825D5B62941A14000E7D395 /* AtenaViewerTests */,
+				5825D5C02941A14000E7D395 /* AtenaViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5825D59F2941A13D00E7D395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5825D5AC2941A13F00E7D395 /* Preview Assets.xcassets in Resources */,
+				5825D5A92941A13F00E7D395 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5B52941A14000E7D395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5BF2941A14000E7D395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5825D59D2941A13D00E7D395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5825D5AE2941A13F00E7D395 /* Persistence.swift in Sources */,
+				5825D5A72941A13D00E7D395 /* ContentView.swift in Sources */,
+				5825D5A52941A13D00E7D395 /* AtenaViewerApp.swift in Sources */,
+				5825D5B12941A13F00E7D395 /* AtenaViewer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5B32941A14000E7D395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5825D5BC2941A14000E7D395 /* AtenaViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5825D5BD2941A14000E7D395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5825D5C82941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift in Sources */,
+				5825D5C62941A14000E7D395 /* AtenaViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5825D5B92941A14000E7D395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5825D5A02941A13D00E7D395 /* AtenaViewer */;
+			targetProxy = 5825D5B82941A14000E7D395 /* PBXContainerItemProxy */;
+		};
+		5825D5C32941A14000E7D395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5825D5A02941A13D00E7D395 /* AtenaViewer */;
+			targetProxy = 5825D5C22941A14000E7D395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5825D5C92941A14000E7D395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5825D5CA2941A14000E7D395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5825D5CC2941A14000E7D395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AtenaViewer/AtenaViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AtenaViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5825D5CD2941A14000E7D395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AtenaViewer/AtenaViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AtenaViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5825D5CF2941A14000E7D395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtenaViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AtenaViewer";
+			};
+			name = Debug;
+		};
+		5825D5D02941A14000E7D395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtenaViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AtenaViewer";
+			};
+			name = Release;
+		};
+		5825D5D22941A14000E7D395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AtenaViewer;
+			};
+			name = Debug;
+		};
+		5825D5D32941A14000E7D395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S92P3NV49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hatenablog.gikoha.AtenaViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AtenaViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5825D59C2941A13D00E7D395 /* Build configuration list for PBXProject "AtenaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5825D5C92941A14000E7D395 /* Debug */,
+				5825D5CA2941A14000E7D395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5825D5CB2941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5825D5CC2941A14000E7D395 /* Debug */,
+				5825D5CD2941A14000E7D395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5825D5CE2941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5825D5CF2941A14000E7D395 /* Debug */,
+				5825D5D02941A14000E7D395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5825D5D12941A14000E7D395 /* Build configuration list for PBXNativeTarget "AtenaViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5825D5D22941A14000E7D395 /* Debug */,
+				5825D5D32941A14000E7D395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5825D5AF2941A13F00E7D395 /* AtenaViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5825D5B02941A13F00E7D395 /* AtenaViewer.xcdatamodel */,
+			);
+			currentVersion = 5825D5B02941A13F00E7D395 /* AtenaViewer.xcdatamodel */;
+			path = AtenaViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5825D5992941A13D00E7D395 /* Project object */;
+}
