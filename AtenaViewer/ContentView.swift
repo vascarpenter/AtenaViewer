@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.furiLastName, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
@@ -21,9 +21,19 @@ struct ContentView: View {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        VStack {
+                            let lastName = item.lastName ?? ""
+                            let firstName = item.firstName ?? ""
+                            let addr = item.addressCode ?? ""
+                            let fullAddress = item.fullAddress ?? ""
+                            Text("\(lastName) \(firstName)")
+                            Text("〒\(addr) \(fullAddress)")
+                        }
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        let lastName = item.lastName ?? ""
+                        let firstName = item.firstName ?? ""
+
+                        Text("\(lastName) \(firstName) ")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -42,7 +52,10 @@ struct ContentView: View {
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            newItem.firstName = "oge"
+            newItem.lastName = "hage"
+            newItem.furiFirstName = "おげ"
+            newItem.furiLastName = "はげ"
 
             do {
                 try viewContext.save()

@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName=".Item" syncable="YES">
+        <attribute name="addressCode" optional="YES" attributeType="String"/>
+        <attribute name="atxBaseYear" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="emailItem" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="fullAddress" optional="YES" attributeType="String"/>
+        <attribute name="furiFirstName" optional="YES" attributeType="String"/>
+        <attribute name="furiLastName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <attribute name="nameOfFamily1" optional="YES" attributeType="String"/>
+        <attribute name="nameOfFamily2" optional="YES" attributeType="String"/>
+        <attribute name="nameOfFamily3" optional="YES" attributeType="String"/>
+        <attribute name="nyCardHistory" optional="YES" attributeType="String"/>
+        <attribute name="phoneItem" optional="YES" attributeType="String"/>
+        <attribute name="printFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="selectedFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="suffix" optional="YES" attributeType="String"/>
+        <attribute name="suffix1" optional="YES" attributeType="String"/>
+        <attribute name="suffix2" optional="YES" attributeType="String"/>
+        <attribute name="suffix3" optional="YES" attributeType="String"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
 </model>
