@@ -21,7 +21,6 @@ class AtenaXMLParser: NSObject, XMLParserDelegate {
         viewContext = context
         let data =  try! Data(contentsOf: url)
         let parser = XMLParser(data: data)
-        item = Item(context: viewContext)
         cnt = 1
         parser.delegate = self
         parser.parse()
@@ -34,6 +33,12 @@ class AtenaXMLParser: NSObject, XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
     {
         currentElementName = elementName
+        if(elementName == "ContactXMLItem")
+        {
+            // new person
+            item = Item(context: viewContext)
+        }
+
         if(elementName == "FirstName" || elementName == "LastName")
         {
             if let pro = attributeDict["pronunciation"]
@@ -65,6 +70,8 @@ class AtenaXMLParser: NSObject, XMLParserDelegate {
             item.fullAddress = string
         case "X-NYCardHistory":
             item.nyCardHistory = string
+        case "Suffix":
+            item.suffix = string
         case "atxBaseYear":
             item.atxBaseYear = Int32(string) ?? 0
         default:
@@ -78,15 +85,12 @@ class AtenaXMLParser: NSObject, XMLParserDelegate {
         {
             item.id = cnt
             cnt = cnt+1
-            try! viewContext.save()
-            item = Item(context: viewContext)
         }
         currentElementName = nil
     }
     
     func parserDidEndDocument(_ parser: XMLParser)
     {
-        viewContext.delete(item)    // remove last null item
         try! viewContext.save()
     }
 }

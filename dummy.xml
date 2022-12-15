@@ -19,7 +19,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="はやし りか">林 里佳</FullName>
 <FirstName pronunciation="りか">里佳</FirstName>
@@ -40,7 +44,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="たじり けいこ">田尻 慶子</FullName>
 <FirstName pronunciation="けいこ">慶子</FirstName>
@@ -61,7 +69,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="おおすみ きょうこ">大隅 今日子</FullName>
 <FirstName pronunciation="きょうこ">今日子</FirstName>
@@ -82,7 +94,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="やまぐち しんや">山口 慎也</FullName>
 <FirstName pronunciation="しんや">慎也</FirstName>
@@ -103,7 +119,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="つかだ しょうたろう">塚田 翔太朗</FullName>
 <FirstName pronunciation="しょうたろう">翔太朗</FirstName>
@@ -124,7 +144,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="かわしま ゆうき">川嶋 祐樹</FullName>
 <FirstName pronunciation="ゆうき">祐樹</FirstName>
@@ -145,7 +169,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="なかじま まさじ">中嶋 将仁</FullName>
 <FirstName pronunciation="まさじ">将仁</FirstName>
@@ -166,7 +194,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="かんの まさあき">菅野 正明</FullName>
 <FirstName pronunciation="まさあき">正明</FirstName>
@@ -187,7 +219,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="ささやま みかこ">笹山 美香子</FullName>
 <FirstName pronunciation="みかこ">美香子</FirstName>
@@ -208,7 +244,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="まえしろ としゆき">真栄城 敏行</FullName>
 <FirstName pronunciation="としゆき">敏行</FirstName>
@@ -229,7 +269,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="いけだ ようじ">池田 陽二</FullName>
 <FirstName pronunciation="ようじ">陽二</FirstName>
@@ -250,7 +294,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="やすい けい">安井 慶</FullName>
 <FirstName pronunciation="けい">慶</FirstName>
@@ -271,7 +319,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="かとう えみこ">加藤 恵美子</FullName>
 <FirstName pronunciation="えみこ">恵美子</FirstName>
@@ -292,7 +344,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="みやじ ひであき">宮治 秀明</FullName>
 <FirstName pronunciation="ひであき">秀明</FirstName>
@@ -313,7 +369,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="よこやま えみ">横山 絵美</FullName>
 <FirstName pronunciation="えみ">絵美</FirstName>
@@ -334,7 +394,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="きくち たくま">菊地 卓磨</FullName>
 <FirstName pronunciation="たくま">卓磨</FirstName>
@@ -355,7 +419,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="もりやま ゆうこ">森山 優子</FullName>
 <FirstName pronunciation="ゆうこ">優子</FirstName>
@@ -376,7 +444,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="やりた あい">鎗田 愛</FullName>
 <FirstName pronunciation="あい">愛</FirstName>
@@ -397,7 +469,11 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 <ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP"><FullName pronunciation="はやし あきひこ">林 章彦</FullName>
 <FirstName pronunciation="あきひこ">章彦</FirstName>
@@ -418,5 +494,9 @@
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">様</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>

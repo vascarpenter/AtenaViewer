@@ -2,6 +2,8 @@
 # CSV library is difficult to use
 
 use utf8;
+use Encode qw(encode);
+
 my $encoding = 'UTF-8';
 my $file = shift;
 open my $fh, "<", $file;
@@ -36,7 +38,13 @@ print qq(</AddressItem>
 </AddressItem>
 </Address>
 <Phone></Phone>
-<Extension></Extension>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">);
+print encode('utf-8', "様");
+print qq(</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="atxBaseYear" xml:lang="ja-JP">2022</ExtensionItem>
+    <ExtensionItem extensionType="Extended" name="X-NYCardHistory" xml:lang="ja-JP">55500015505555502007</ExtensionItem>
+</Extension>
 </ContactXMLItem>
 );
 
