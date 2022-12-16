@@ -89,9 +89,9 @@ struct OpenFileItem: View {
 struct ShowHelpItem: View {
     var body : some View {
         Button (action: {
-            NSWorkspace.shared.open(URL(string: "https://github.com/vascarpenter/")!)
+            NSWorkspace.shared.open(URL(string: "https://github.com/vascarpenter/AtenaViewer")!)
         }, label: {
-            Text("show website")
+            Text("Show AtenaViwer Website")
         })
     }
 }
@@ -144,16 +144,17 @@ struct SaveAsNengaKazokuCSV: View {
                 str2 += "," + (item.furiLastName  ?? "")
                 str2 += "," + (item.furiFirstName  ?? "")
                 str2 += "," + (item.addressCode  ?? "")
-                str2 += "," + insertCommaBeforeKatakana(str: (item.fullAddress  ?? ""))             // 余りに長い住所はカタカナでぶった切る　たいていマンション名の前
+
+                // あまりに長い住所はカタカナでぶった切る　たいていマンション名の前　ただノは除く
+                str2 += "," + insertCommaBeforeKatakana(str: (item.fullAddress  ?? ""))
                 str2 += ",,,"
-                str2 += ",,,"  // Name of Family1
-                str2 += ",,,"
-                str2 += ",,,"
-                str2 += ",,,"
+                str2 += ",," + (item.nameOfFamily1  ?? "")  + "," + (item.suffix1  ?? "")  // Name of Family1
+                str2 += ",," + (item.nameOfFamily2  ?? "")  + "," + (item.suffix2  ?? "")  // Name of Family2
+                str2 += ",," + (item.nameOfFamily3  ?? "")  + "," + (item.suffix3  ?? "")  // Name of Family3
                 str2 += ",,,"
                 str2 += ",,,,,,,"
                 str2 += ",,,,,,,,"
-                str2 += ",,,,,,"
+                str2 += ",,,,,,,,,"
 
                 str += str2
 
@@ -202,9 +203,9 @@ struct SaveAsKitamuraCSV: View {
             for item in alladdr
             {   var str2 = (item.lastName ?? "") + "," + (item.firstName ?? "")
                 str2 += "," + (item.suffix ?? "")
-                str2 += ",,,"  // Name of Family1
-                str2 += ",,,"
-                str2 += ",,,"
+                str2 += ",," + (item.nameOfFamily1  ?? "")  + "," + (item.suffix1  ?? "")  // Name of Family1
+                str2 += ",," + (item.nameOfFamily2  ?? "")  + "," + (item.suffix2  ?? "")  // Name of Family2
+                str2 += ",," + (item.nameOfFamily3  ?? "")  + "," + (item.suffix3  ?? "")  // Name of Family3
                 str2 += ",,,"
                 str2 += ",,,"
                 str2 += "," + (item.addressCode  ?? "")
@@ -240,7 +241,10 @@ struct SaveAsKitamuraCSV: View {
 
 func insertCommaBeforeKatakana(str: String) -> String
 {
-    let regex = try! NSRegularExpression(pattern: "[ア-ネハ-ン]")  // ノは地名でも使われることがあるから... でもノではじまるマンションあったらいかんなあ
+    // あまりに長い住所はカタカナでぶった切る　たいていマンション名の前　ただノは除く
+    // ノは地名でも使われることがあるから... でもノではじまるマンションあったらいかんなあ
+
+    let regex = try! NSRegularExpression(pattern: "[ア-ネハ-ン]")
     let range = regex.rangeOfFirstMatch(in:str, options:[], range:NSMakeRange(0, str.utf16.count))
     if range.location == NSNotFound || str.utf16.count<16 {
         return str+","

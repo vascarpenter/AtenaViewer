@@ -72,6 +72,26 @@ class AtenaXMLParser: NSObject, XMLParserDelegate {
             item.nyCardHistory = string
         case "Suffix":
             item.suffix = string
+        case "NamesOfFamily":
+            // 複数回出現
+            if (item.nameOfFamily1==nil)
+            {
+                item.nameOfFamily1 = string
+            }
+            else if (item.nameOfFamily2==nil)
+            {
+                item.nameOfFamily2 = string
+            }
+            else if (item.nameOfFamily3==nil)
+            {
+                item.nameOfFamily3 = string
+            }
+        case "X-Suffix1":
+            item.suffix1 = string
+        case "X-Suffix2":
+            item.suffix2 = string
+        case "X-Suffix3":
+            item.suffix3 = string
         case "atxBaseYear":
             item.atxBaseYear = Int32(string) ?? 0
         default:
