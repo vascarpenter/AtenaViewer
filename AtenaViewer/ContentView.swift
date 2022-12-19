@@ -10,6 +10,7 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var appState : AppState
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.furiLastName, ascending: true)],
@@ -47,13 +48,15 @@ struct ContentView: View {
             }
             Text("Select an item")
         }
+        .environmentObject(appState)
+
     }
 
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
-            newItem.firstName = "oge"
-            newItem.lastName = "hage"
+            newItem.firstName = "おげ"
+            newItem.lastName = "はげ"
             newItem.furiFirstName = "おげ"
             newItem.furiLastName = "はげ"
 
@@ -91,8 +94,3 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}

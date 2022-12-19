@@ -17,6 +17,7 @@
 		5825D5C62941A14000E7D395 /* AtenaViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5C52941A14000E7D395 /* AtenaViewerUITests.swift */; };
 		5825D5C82941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5C72941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift */; };
 		5825D5D52941BA0D00E7D395 /* AtenaXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825D5D42941BA0D00E7D395 /* AtenaXMLParser.swift */; };
+		5851C15A294FE00B00867A38 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851C159294FE00B00867A38 /* AppState.swift */; };
 		586ED7EF2949EEF900CCEC01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 586ED7EE2949EEF900CCEC01 /* README.md */; };
 		58A2EEDA2944C05800648DF2 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2EED82944C05800648DF2 /* Item+CoreDataClass.swift */; };
 		58A2EEDB2944C05800648DF2 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2EED92944C05800648DF2 /* Item+CoreDataProperties.swift */; };
@@ -54,6 +55,7 @@
 		5825D5C52941A14000E7D395 /* AtenaViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerUITests.swift; sourceTree = "<group>"; };
 		5825D5C72941A14000E7D395 /* AtenaViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5825D5D42941BA0D00E7D395 /* AtenaXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtenaXMLParser.swift; sourceTree = "<group>"; };
+		5851C159294FE00B00867A38 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		586ED7EE2949EEF900CCEC01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		58A2EED82944C05800648DF2 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		58A2EED92944C05800648DF2 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5825D5A42941A13D00E7D395 /* AtenaViewerApp.swift */,
+				5851C159294FE00B00867A38 /* AppState.swift */,
 				5825D5D42941BA0D00E7D395 /* AtenaXMLParser.swift */,
 				5825D5A62941A13D00E7D395 /* ContentView.swift */,
 				58A2EED82944C05800648DF2 /* Item+CoreDataClass.swift */,
@@ -281,6 +284,7 @@
 				58A2EEDB2944C05800648DF2 /* Item+CoreDataProperties.swift in Sources */,
 				58A2EEDA2944C05800648DF2 /* Item+CoreDataClass.swift in Sources */,
 				5825D5AE2941A13F00E7D395 /* Persistence.swift in Sources */,
+				5851C15A294FE00B00867A38 /* AppState.swift in Sources */,
 				5825D5A72941A13D00E7D395 /* ContentView.swift in Sources */,
 				5825D5D52941BA0D00E7D395 /* AtenaXMLParser.swift in Sources */,
 				5825D5A52941A13D00E7D395 /* AtenaViewerApp.swift in Sources */,
