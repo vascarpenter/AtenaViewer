@@ -15,7 +15,6 @@ struct AtenaViewerApp: App {
 
     init()
     {
-        cleanUp()
     }
     
     var body: some Scene {
@@ -58,22 +57,6 @@ struct AtenaViewerApp: App {
             }
         }
     }
-
-    func cleanUp() {
-        let viewContext = persistenceController.container.viewContext
-        for entity in persistenceController.container.managedObjectModel.entities {
-            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entity.name!)
-            let results = try! viewContext.fetch(fetchRequest)
-            for result in results {
-                viewContext.delete(result)
-            }
-        }
-
-        if viewContext.hasChanges {
-            try! viewContext.save()
-        }
-    }
-
 }
 
 

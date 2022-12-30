@@ -11,6 +11,7 @@ class AppState: ObservableObject {
 
     func OpenFileItem()
     {
+        
         let viewContext = PersistenceController.shared.container.viewContext
 
         let openPanel = NSOpenPanel()
@@ -20,6 +21,9 @@ class AppState: ObservableObject {
         openPanel.canChooseFiles = true
         openPanel.begin { (result) -> Void in
             if result == .OK {
+                // remove all core data object
+                self.cleanCoreDataObject()
+
                 guard let url = openPanel.url else { return }
                 let parser = AtenaXMLParser()
                 parser.loadData(url: url, context: viewContext)
@@ -149,6 +153,23 @@ class AppState: ObservableObject {
         var str2 = str
         str2.insert(contentsOf: ",", at: start)
         return str2
+    }
+
+    func cleanCoreDataObject()
+    {
+        // remove all CoreData Object
+        let viewContext = PersistenceController.shared.container.viewContext
+        for entity in PersistenceController.shared.container.managedObjectModel.entities {
+            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entity.name!)
+            let results = try! viewContext.fetch(fetchRequest)
+            for result in results {
+                viewContext.delete(result)
+            }
+        }
+
+        if viewContext.hasChanges {
+            try! viewContext.save()
+        }
     }
 
 }
