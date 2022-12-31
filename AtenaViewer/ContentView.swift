@@ -67,6 +67,7 @@ struct ContentView: View {
             }
         }
         .toolbar {
+            
             ToolbarItem {
                 Button(action: {
                     self.showingAddSheet.toggle()
@@ -122,15 +123,15 @@ struct AddSheet: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("姓", text: $lname)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("名", text: $fname)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-            HStack {
                 TextField("せい", text: $furiLname)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("めい", text: $furiFname)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            HStack {
+                TextField("姓", text: $lname)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("名", text: $fname)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             HStack {
@@ -145,19 +146,21 @@ struct AddSheet: View {
             }
             HStack {
                 Button("追加") {
+                    let calendar = Calendar(identifier: .gregorian)
                     let newItem = Item(context: viewContext)
+                    
                     newItem.firstName = fname
                     newItem.lastName = lname
                     newItem.furiFirstName = furiFname
                     newItem.furiLastName = furiLname
                     newItem.addressCode = addrcode
                     newItem.fullAddress = addr
-
+                    newItem.atxBaseYear = Int32(calendar.component(.year, from: Date()))
+                    newItem.nyCardHistory = "00000000000000002007"
+                    
                     do {
                         try viewContext.save()
                     } catch {
-                        // Replace this implementation with code to handle the error appropriately.
-                        // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                         let nsError = error as NSError
                         fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
                     }

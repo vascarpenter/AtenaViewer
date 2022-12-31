@@ -36,6 +36,13 @@ struct AtenaViewerApp: App {
             }
             CommandGroup(after: .newItem) {
                 Button (action: {
+                    appState.SaveAsXML()
+                }, label: {
+                    Text("ContactXMLとして保存...")
+                })
+            }
+            CommandGroup(after: .newItem) {
+                Button (action: {
                     appState.SaveAsNengaKazokuCSV()
                 }, label: {
                     Text("年賀家族CSVとして保存...")

@@ -27,8 +27,116 @@ class AppState: ObservableObject {
                 guard let url = openPanel.url else { return }
                 let parser = AtenaXMLParser()
                 parser.loadData(url: url, context: viewContext)
+                do {
+                    try viewContext.save()
+                } catch {
+                    let nsError = error as NSError
+                    fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+                }
+
             }
         }
+    }
+    
+    func SaveAsXML()
+    {
+        let viewContext = PersistenceController.shared.container.viewContext
+
+        var alladdr: [Item] = []
+        let fetchRequest = Item.fetchRequest()
+
+        do
+        {
+            alladdr = try viewContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch \(error) \(error.userInfo)")
+        }
+
+        var str = """
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ContactXML SYSTEM "ContactXML_01_01_20020615.dtd">
+<ContactXML xmlns="http://www.xmlns.org/2002/ContactXML" creator="http://www.agenda.co.jp/atena-shokunin/mac/2.0" version="1.1">\n
+"""
+        for item in alladdr
+        {
+            str += """
+<ContactXMLItem><PersonName><PersonNameItem xml:lang="ja-JP">\n
+"""
+            str += String(format: "<FullName pronunciation=\"%@ %@\">%@ %@</FullName>\n", item.furiLastName ?? "", item.furiFirstName ?? "",
+                           item.lastName ?? "", item.firstName ?? "")
+            str += String(format: "<FirstName pronunciation=\"%@\">%@</FirstName>\n",  item.furiFirstName ?? "", item.firstName ?? "")
+            str += String(format: "<LastName pronunciation=\"%@\">%@</LastName>\n",  item.furiLastName ?? "", item.lastName ?? "")
+            str += """
+</PersonNameItem>
+</PersonName>
+<Address>
+<AddressItem locationType="Home" preference="True" xml:lang="ja-JP">
+<AddressCode codeDomain="ZIP7">
+"""
+            str += String(format: "%@</AddressCode>\n<FullAddress>%@</FullAddress>",  item.addressCode ?? "", item.fullAddress ?? "")
+            str += """
+</AddressItem>
+<AddressItem locationType="Office" xml:lang="ja-JP">
+<AddressCode codeDomain="ZIP7"></AddressCode>
+<FullAddress></FullAddress>
+</AddressItem>
+<AddressItem locationType="Others" xml:lang="ja-JP">
+<AddressCode codeDomain="ZIP7"></AddressCode>
+<FullAddress></FullAddress>
+</AddressItem>
+</Address>
+<Phone></Phone>
+<Extension>
+<ExtensionItem extensionType="Common" name="Suffix" xml:lang="ja-JP">
+"""
+            str += String(format: "%@</ExtensionItem>\n",  item.suffix ?? "")
+            if let nameoffam = item.nameOfFamily1 {
+                str += String(format: "<ExtensionItem extensionType=\"Common\" name=\"NamesOfFamily\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              nameoffam)
+                str += String(format: "<ExtensionItem extensionType=\"Extended\" name=\"X-Suffix1\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              item.suffix1 ?? "")
+            }
+            if let nameoffam2 = item.nameOfFamily2 {
+                str += String(format: "<ExtensionItem extensionType=\"Common\" name=\"NamesOfFamily\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              nameoffam2)
+                str += String(format: "<ExtensionItem extensionType=\"Extended\" name=\"X-Suffix2\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              item.suffix2 ?? "")
+            }
+            if let nameoffam3 = item.nameOfFamily3 {
+                str += String(format: "<ExtensionItem extensionType=\"Common\" name=\"NamesOfFamily\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              nameoffam3)
+                str += String(format: "<ExtensionItem extensionType=\"Extended\" name=\"X-Suffix3\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              item.suffix3 ?? "")
+            }
+            if let nycard = item.nyCardHistory {
+                str += String(format: "<ExtensionItem extensionType=\"Extended\" name=\"X-NYCardHistory\" xml:lang=\"ja-JP\">%@</ExtensionItem>\n",
+                              nycard)
+            }
+            if item.atxBaseYear != 0 {
+                str += String(format: "<ExtensionItem extensionType=\"Extended\" name=\"atxBaseYear\" xml:lang=\"ja-JP\">%d</ExtensionItem>\n",
+                              item.atxBaseYear)
+            }
+
+            str += "</Extension>\n</ContactXMLItem>\n"
+        }
+        str += "</ContactXML>\n"
+
+        let savePanel = NSSavePanel()
+        savePanel.canCreateDirectories = true
+        savePanel.showsTagField = false
+        savePanel.nameFieldStringValue = "atenaviewer.xml"
+        savePanel.begin { (result) in
+            if result == .OK {
+                guard let url = savePanel.url else { return }
+                //print(url.absoluteString)
+                do {
+                    try str.write(to: url, atomically: true, encoding: String.Encoding.utf8) // utf8
+                } catch {
+                    // failed to write file (bad permissions, bad filename etc.)
+                }
+            }
+        }
+
     }
     
     func SaveAsNengaKazokuCSV()
