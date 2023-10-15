@@ -55,6 +55,13 @@ struct AtenaViewerApp: App {
                     Text("キタムラCSVとして保存...")
                 })
             }
+            CommandGroup(after: .newItem) {
+                Button (action: {
+                    appState.SaveAsAisatsujouCSV()
+                }, label: {
+                    Text("挨拶状.com CSVとして保存...")
+                })
+            }
             CommandGroup(replacing: .help) {
                 Button (action: {
                     NSWorkspace.shared.open(URL(string: "https://github.com/vascarpenter/AtenaViewer")!)
